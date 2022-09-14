@@ -3,7 +3,7 @@ import ContactsList from "../ContactList/ContactList";
 import Filter from "../Filter/Filter";
 import { ContactsTitle } from './App.styled';
 import { useDispatch } from 'react-redux';
-import { updateFilter } from "../../components/redux/filter/filter-actions";
+import { updateFilter } from "../../redux/filter/filter-actions";
 
 export function App() {
     const dispatch = useDispatch();

@@ -8,7 +8,7 @@ import { Label } from './ContactForm.styled';
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 // import { saveContact } from "../../components/redux/contacts/contacts-actions";
-import { fetchContacts, addContact } from "../redux/contacts/contacts-operations";
+import { fetchContacts, addContact } from "../../redux/contacts/contacts-operations";
 // import { getContacts } from "../../api/contacts";
 
 export default function Form() {
@@ -43,7 +43,7 @@ export default function Form() {
             name,
             number
         }
-        
+
         dispatch(addContact(newData))
         reset();
     }
